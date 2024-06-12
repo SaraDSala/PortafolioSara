@@ -1,0 +1,383 @@
+/* Estilos generales */
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  background-color: rgb(255, 252, 233) ;
+}
+h1{
+  font-size: 2.4rem;  /* Rem: dimensión relativa al elemento raiz, 2.5 veces el tamaño*/
+  font-family: "Playfair Display", serif;
+}
+
+.seccion-oscura{
+  color:white;
+  background-color: rgb(207, 111, 28);
+}
+
+.seccion-clara{
+  color:black;
+  background-color: rgb(255, 252, 233);
+}
+
+.seccion-titulo{
+  font-size: 2.5rem;
+  padding: 10px 5px;
+  font-family: "Playfair Display",serif;
+}
+
+.seccion-texto{
+  font-size: 1.5rem;
+}
+
+.btn-outline-danger{
+  font-size:1.1rem;
+  margin:20px;
+}
+
+.texto-negro{
+  color:black;
+}
+
+.texto-blanco{
+  color:white;
+}
+
+.seccion-descripcion{
+  font-size: 1.3rem;
+  color: rgb(86, 86, 86);
+}
+
+/* Barra de navegacion */
+.navbar{
+  padding: 2rem;
+  background-color: rgb(239, 200, 176) ;
+}
+
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Seccion hero */
+.hero{
+  background-color: rgb(255, 252, 233);
+  min-height: 450px;
+  text-align: center;
+}
+
+.hero-principal{
+  padding: 0.1rem 1rem 2rem;
+}
+
+.hero-imagen-perfil{
+  width: 200px;
+  border-radius: 20px;
+  border-bottom: 2px solid salmon;
+  margin:50px;
+}
+
+.hero-principal h2{
+  font-size: 1.5rem;
+  color: rgb(78, 78, 78);
+}
+
+.hero-inferior{
+  padding: 0rem 1rem 2rem;
+}
+
+/* SOBRE MI */
+.about-me{
+  height: 500px;
+  padding: 10px;
+}
+
+.about-me .contenedor{
+  max-width: 600px;
+  text-align: center;
+}
+
+/*  Experiencia */
+.experiencia{
+  padding: 40px 40px 60px 40px; /*! Sentido agujas del reloj */
+}
+
+.experiencia .columna {
+  padding: 20px;  
+  border: 2px solid  rgb(207, 111, 28);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover{
+  color: white;
+  background-color: #4f2006;
+}
+
+.experiencia i{
+  font-size: 2.5rem;
+  color: black;
+  background-color: rgb(255, 252, 233);
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 13px 0 10px;
+}
+
+.badges-contenedor{
+  font-size: 25px;
+  font-weight: bold;
+  margin:10px 2px;
+}
+
+/* Proyectos */
+.proyectos-recientes{
+  padding: 20px;
+}
+
+.proyectos-recientes img{
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos-contenedor{
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.proyecto{
+  position: relative;
+}
+
+.overlay{
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} 
+
+.overlay p{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.proyecto:hover img{
+  opacity:0.15;
+}
+
+.proyecto:hover .overlay{
+  opacity: 1;
+} 
+
+.overlay .iconos-contenedor{
+  display: flex;
+}
+
+.overlay i{ /* Todos los íconos i dentro de overlay */
+  color: black;
+  font-size: 50px;
+  margin:10px;
+}
+
+/* Articulos */
+.articulos{
+  min-height: 500px;
+  padding:30px;
+}
+
+.articulos .card{
+  width:80%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.articulos .card-header{
+  font-weight: 700;
+}
+
+/* Testimonios */
+.testimonios{
+  padding: 40px 40px 80px 40px;
+  margin-bottom: 50px;
+}
+
+.testimonios .carousel{
+  max-width: 800px;
+}
+
+.carousel-item{
+  height: 500px;
+}
+
+.carousel-item .container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-item img{
+  height: 100%;
+  width: 50%;
+}
+
+/* Contacto */
+.contacto{
+  background-color:  rgb(207, 111, 28);
+}
+
+.contacto .container{
+  max-width: 1100px;
+  min-height: 40px;
+  padding: 20px;
+}
+
+.contacto .rectangulo{
+  margin-top: -5rem;
+  color:rgb(207, 111, 28);
+  font-weight: 600;
+  background-color: rgb(255, 252, 233);
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px rgb(207, 111, 28);
+}
+
+.contacto .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto button{
+  color: rgb(207, 111, 28);
+  font-weight: 600;
+  background-color: transparent;
+  border: 2px solid rgb(207, 111, 28);
+  padding: 1.25em 2em;
+  margin:10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+  background-color:#4f2006;
+  color:white;
+}
+
+.contacto button i{
+  color:rgb(207, 111, 28);
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i{
+  color: white;
+}
+
+/* Footer */
+footer{
+  min-height: 500px;
+}
+
+.footer-logo{
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.footer-texto{
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.iconos-redes a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:2px;
+  margin:10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes i{
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes a:hover{
+  background-color: white;
+  border: rgb(207, 111, 28);
+  width: 60px;
+  height: 60px;
+}
+
+.iconos-redes a:hover i{
+  color: rgb(207, 111, 28);
+  font-size: 2rem;
+}
+
+.derechos-autor{
+  font-size: 15px;
+  color:rgb(241, 241, 241);
+  padding: 20px;
+}
+
+
+/* Configuración para el responsive */
+
+@media screen and (max-width:400px) {
+  .overlay p{
+    font-size: 20px;
+  }
+  
+  .overlay i{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .navbar-brand{
+    display: none;
+  }
+
+  .nav-item{
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width:700px){
+  .navbar{
+    font-size: 1.4rem;
+  }
+
+
+  .hero-inferior-img{
+    max-width: 500px;
+  }
+}
