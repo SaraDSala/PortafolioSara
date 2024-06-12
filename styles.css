@@ -74,7 +74,8 @@ h1{
   padding: 0.1rem 1rem 2rem;
 }
 
-.hero-imagen-perfil{
+
+.hero .hero-principal .hero-imagen-perfil{
   width: 200px;
   border-radius: 20px;
   border-bottom: 2px solid salmon;
@@ -300,8 +301,8 @@ footer{
 }
 
 .footer-logo{
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: 10px;
 }
 
